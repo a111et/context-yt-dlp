@@ -6,7 +6,7 @@
 
 Простой проект, который добавляет в контекстное меню Windows 10 и 11 пункт «Скачать видео, аудио и фото» для большого пула сайтов - таких как YouTube, SoundCloud, TikTok, Twitter/X, Instagram, Pixiv, 4chan и многих других - с помощью yt-dlp и gallery-dl
 
-<img width="567" height="131" alt="Экран контекстного меню" src="https://images2.imgbox.com/f3/bf/5OWYEcIC_o.png" />
+![Экран контекстного меню](img1.png)
 
 >[!NOTE]
 > Протестировано на Windows 11 (версия 26H1).
