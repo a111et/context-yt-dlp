@@ -17,10 +17,10 @@ if not defined ClipboardData (
 )
 
 if "%1"=="audio" goto audio
-if "%1"=="audio-aria2c" goto audio_aria
+if "%1"=="audio_aria" goto audio_aria
 if "%1"=="video" goto video
-if "%1"=="video" goto video1440
-if "%1"=="video" goto video2160
+if "%1"=="video1440" goto video1440
+if "%1"=="video2160" goto video2160
 if "%1"=="video-aria2c" goto video_aria
 if "%1"=="image" goto image
 
@@ -30,7 +30,7 @@ exit /b
 
 
 :video
-title Downloading video
+title Downloading video 1080p
 echo Downloading video URL: %ClipboardData%
 
 yt-dlp ^
@@ -44,7 +44,7 @@ yt-dlp ^
 goto end
 
 :video1440
-title Downloading video
+title Downloading video 1440p
 echo Downloading video URL: %ClipboardData%
 
 yt-dlp ^
@@ -58,7 +58,7 @@ yt-dlp ^
 goto end
 
 :video2160
-title Downloading video
+title Downloading video 2160p
 echo Downloading video URL: %ClipboardData%
 
 yt-dlp ^
@@ -72,8 +72,8 @@ yt-dlp ^
 goto end
 
 :video_aria
-title Downloading video (aria2c)
-echo Downloading video (aria2c)...
+title Downloading video 1080p (aria2c)
+echo Downloading video (aria2c) URL: %ClipboardData%
 
 yt-dlp ^
 --yes-playlist ^
@@ -106,7 +106,7 @@ goto end
 
 :audio_aria
 title Downloading audio (aria2c)
-echo Downloading audio (aria2c)...
+echo Downloading audio (aria2c) URL: %ClipboardData%
 
 yt-dlp ^
 --yes-playlist ^
